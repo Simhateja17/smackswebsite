@@ -3,7 +3,7 @@ import Link from "next/link";
 import Phone, { FeedScreen, CaptureScreen, LeaderboardScreen } from "../components/Phone";
 
 export const metadata: Metadata = {
-  title: "Press kit — SmackCheck",
+  title: "Press kit  SmackCheck",
   description: "Downloadable logos, brand colors, screenshots and boilerplate copy for journalists writing about SmackCheck.",
 };
 
@@ -39,7 +39,7 @@ export default function Press() {
           <div className="boiler">
             <button className="copy-btn">Copy</button>
             <p><strong>SmackCheck</strong> is the social food app that uses AI to score every dish you eat. Founded in 2024 and based in Brooklyn, SmackCheck combines on‑device computer vision with a community of 24,800+ foodies to build a real‑time map of the best plates in every city.</p>
-            <p>The company's flagship feature, the <strong>Smack Score</strong>, rates dishes from 0 to 10 in under a second — breaking down plating, craft and value with model‑generated tasting notes. SmackCheck Labs is backed by [investors] and is currently in public beta on Android with iOS launching in 2026.</p>
+            <p>The company's flagship feature, the <strong>Smack Score</strong>, rates dishes from 0 to 10 in under a second  breaking down plating, craft and value with model‑generated tasting notes. SmackCheck Labs is backed by [investors] and is currently in public beta on Android with iOS launching in 2026.</p>
           </div>
         </div>
       </section>

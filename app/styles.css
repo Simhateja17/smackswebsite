@@ -1,6 +1,6 @@
-/* SmackCheck Marketing — Light Theme · Wine + Cream */
+/* SmackCheck Marketing  Light Theme · Wine + Cream */
 :root {
-  /* Surfaces — warm cream paper aesthetic */
+  /* Surfaces  warm cream paper aesthetic */
   --bg: #F2ECE5;            /* warm cream page background */
   --bg-soft: #ECE5DE;       /* slightly darker for section banding */
   --bg-warm: #E4DDD4;       /* warmer accent panels */
@@ -19,7 +19,7 @@
   --border-on-dark-strong: rgba(255, 255, 255, 0.18);
   --border-brand: rgba(100, 34, 35, 0.35);
 
-  /* Text — on light bg */
+  /* Text  on light bg */
   --text: #1A1414;
   --text-2: #2D2F2F;
   --text-dim: #6F6864;
@@ -31,7 +31,7 @@
   --text-on-dark-mute: #8A807A;
 
   /* Brand */
-  --brand: #642223;          /* canonical deep wine — primary */
+  --brand: #642223;          /* canonical deep wine  primary */
   --brand-hover: #7A2A2B;    /* slightly lighter on hover */
   --brand-deep: #3D1418;     /* darkest wine */
   --rose: #BB5B5C;           /* secondary rose accent */

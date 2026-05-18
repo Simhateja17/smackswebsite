@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — SmackCheck",
+  title: "Terms of Service  SmackCheck",
   description: "SmackCheck Terms of Service. Moderation rules, user conduct, account termination, content ownership.",
 };
 
@@ -57,16 +57,16 @@ export default function Terms() {
 
               <h2 id="content">4. Your content</h2>
               <p>You retain ownership of every smack, photo, tasting note and comment you post (collectively, &quot;User Content&quot;). By posting, you grant SmackCheck a worldwide, royalty‑free, non‑exclusive license to host, display, reproduce and distribute that content <strong>solely for the purpose of operating the service</strong>.</p>
-              <p>This license ends when you delete the content — except where it has already been re‑shared by other users, in which case it ends when they delete it too.</p>
+              <p>This license ends when you delete the content  except where it has already been re‑shared by other users, in which case it ends when they delete it too.</p>
 
               <h2 id="conduct">5. User conduct</h2>
               <p>Don't be a person nobody wants to eat with. Specifically, don't:</p>
               <ul>
                 <li>Post content that harasses, threatens, dehumanizes or discriminates against anyone.</li>
                 <li>Post sexual content, gore, or content that exploits minors.</li>
-                <li>Impersonate others — chefs, restaurants, public figures, or other users.</li>
+                <li>Impersonate others  chefs, restaurants, public figures, or other users.</li>
                 <li>Spam, scrape, or use bots to inflate XP, scores or follower counts.</li>
-                <li>Submit fake reviews — paid, coerced, or competitive sabotage.</li>
+                <li>Submit fake reviews  paid, coerced, or competitive sabotage.</li>
                 <li>Reverse engineer the AI model or attempt to extract training data.</li>
                 <li>Use the service to violate any law or third‑party right.</li>
               </ul>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Download — SmackCheck",
+  title: "Download  SmackCheck",
   description: "Download SmackCheck. Android APK & Play Store available now. iOS TestFlight coming soon. Scan the QR to open on your phone.",
 };
 
@@ -54,7 +54,7 @@ export default function Download() {
                   </div>
                   <div className="dl-info">
                     <div className="top"><span className="pill-status pill-soon">TestFlight · Soon</span></div>
-                    <h3>iOS — coming this season</h3>
+                    <h3>iOS  coming this season</h3>
                     <p>We're rolling out TestFlight in waves. Join the waitlist for a code.</p>
                     <div className="v">iOS 16+ · invite required</div>
                   </div>
@@ -90,7 +90,7 @@ export default function Download() {
                 </svg>
               </div>
               <h3 className="h-3">Open on your phone</h3>
-              <p>Point your camera at the code to install on Android — or save it for later.</p>
+              <p>Point your camera at the code to install on Android  or save it for later.</p>
               <div style={{ display: "flex", gap: 8, justifyContent: "center", flexWrap: "wrap" }}>
                 <span className="chip"><span className="glow-dot" style={{ width: 6, height: 6 }}></span> apk.smackcheck.app</span>
               </div>

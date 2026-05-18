@@ -27,3 +27,5 @@ Thumbs.db
 # Misc
 *.swp
 *.swo
+
+.vercel

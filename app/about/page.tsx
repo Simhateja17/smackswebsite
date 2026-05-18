@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — SmackCheck",
+  title: "About  SmackCheck",
   description: "The story behind SmackCheck. We're a small team building the social food app for people who actually care what's on the plate.",
 };
 
@@ -13,7 +13,7 @@ export default function About() {
         <div className="wrap-narrow" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ justifyContent: "center" }}>About</span>
           <h1 className="h-display">We're building<br/>the app we wanted<br/>to <span className="accent">eat with</span>.</h1>
-          <p className="lede" style={{ margin: "26px auto 0" }}>SmackCheck started as a group chat. Then a spreadsheet. Then an obsession. Now it's an app — and a community of 24,800+ people who really care what's on the plate.</p>
+          <p className="lede" style={{ margin: "26px auto 0" }}>SmackCheck started as a group chat. Then a spreadsheet. Then an obsession. Now it's an app  and a community of 24,800+ people who really care what's on the plate.</p>
         </div>
       </section>
 
@@ -24,7 +24,7 @@ export default function About() {
               <span className="eyebrow">The story</span>
               <h2 className="h-1" style={{ marginTop: 14 }}>Star ratings don't taste like anything.</h2>
               <p>In 2024 we got tired of arguing about dinner. The five‑star apps were full of bots. The check‑in apps were full of vibes. Nobody was actually scoring the food.</p>
-              <p>So we started a Notion doc — every dish, scored 0 to 10, with a tasting note. Within a year it had grown to 4,800 entries across three cities. People kept asking for access. We started saying yes.</p>
+              <p>So we started a Notion doc  every dish, scored 0 to 10, with a tasting note. Within a year it had grown to 4,800 entries across three cities. People kept asking for access. We started saying yes.</p>
               <p>SmackCheck is what that doc became when we let an AI help.</p>
             </div>
             <div className="story-img"><div className="stamp">SmackCheck HQ · Brooklyn · 2025</div></div>
@@ -34,8 +34,8 @@ export default function About() {
             <div>
               <span className="eyebrow">The mission</span>
               <h2 className="h-1" style={{ marginTop: 14 }}>A taste graph for the world.</h2>
-              <p>We think great food is the easiest thing in the world to find — and the hardest thing to remember. The dish you couldn't stop thinking about last August? Gone. The bar your friend swore by? Forgotten.</p>
-              <p>Our job is to make taste portable. A score, a tasting note, a pin on a map — so the best meal of last year is the first answer to &quot;where should we eat tonight?&quot;</p>
+              <p>We think great food is the easiest thing in the world to find  and the hardest thing to remember. The dish you couldn't stop thinking about last August? Gone. The bar your friend swore by? Forgotten.</p>
+              <p>Our job is to make taste portable. A score, a tasting note, a pin on a map  so the best meal of last year is the first answer to &quot;where should we eat tonight?&quot;</p>
             </div>
             <div className="story-img" style={{ background: "linear-gradient(135deg,rgba(224,169,92,.25),rgba(100,80,30,.15))" }}><div className="stamp">Field notes · 4,812 dishes · 3 cities</div></div>
           </div>

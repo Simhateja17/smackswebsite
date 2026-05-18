@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ — SmackCheck",
+  title: "FAQ  SmackCheck",
   description: "Common questions about SmackCheck. AI accuracy, privacy, moderation, community safety, data usage.",
 };
 
@@ -33,11 +33,11 @@ export default function FAQ() {
                 <h2>AI &amp; accuracy</h2>
                 <details className="faq-item" open>
                   <summary className="faq-q">How accurate is the smack score, really?<span className="ic">+</span></summary>
-                  <div className="faq-a"><p>The model is right about the dish 96.1% of the time. The smack score correlates with our community's own ratings at 0.84 — high, but not perfect. We show a confidence level on every score so you know when to trust it and when to taste for yourself.</p></div>
+                  <div className="faq-a"><p>The model is right about the dish 96.1% of the time. The smack score correlates with our community's own ratings at 0.84  high, but not perfect. We show a confidence level on every score so you know when to trust it and when to taste for yourself.</p></div>
                 </details>
                 <details className="faq-item">
                   <summary className="faq-q">Can I override the score?<span className="ic">+</span></summary>
-                  <div className="faq-a"><p>Always. The AI suggests, you decide. Every override teaches our personalization layer — over time, your scores get more &quot;you&quot; and less average.</p></div>
+                  <div className="faq-a"><p>Always. The AI suggests, you decide. Every override teaches our personalization layer  over time, your scores get more &quot;you&quot; and less average.</p></div>
                 </details>
                 <details className="faq-item">
                   <summary className="faq-q">What if the AI doesn't recognize my dish?<span className="ic">+</span></summary>
@@ -65,11 +65,11 @@ export default function FAQ() {
                 <h2>Moderation</h2>
                 <details className="faq-item">
                   <summary className="faq-q">How do you keep spam and bots out?<span className="ic">+</span></summary>
-                  <div className="faq-a"><p>Every account is verified at sign‑up. Reviews are weighted by reputation — new accounts can post, but their smacks don't affect the city map until they've earned some XP. Restaurants can't pay to rank, ever.</p></div>
+                  <div className="faq-a"><p>Every account is verified at sign‑up. Reviews are weighted by reputation  new accounts can post, but their smacks don't affect the city map until they've earned some XP. Restaurants can't pay to rank, ever.</p></div>
                 </details>
                 <details className="faq-item">
                   <summary className="faq-q">Can restaurants flag content?<span className="ic">+</span></summary>
-                  <div className="faq-a"><p>Yes. Business owners can claim a venue and respond to smacks (one response per smack). They cannot remove honest reviews — only abusive or false ones, which we review within 48 hours.</p></div>
+                  <div className="faq-a"><p>Yes. Business owners can claim a venue and respond to smacks (one response per smack). They cannot remove honest reviews  only abusive or false ones, which we review within 48 hours.</p></div>
                 </details>
               </div>
 
@@ -101,7 +101,7 @@ export default function FAQ() {
                 <h2>Billing</h2>
                 <details className="faq-item">
                   <summary className="faq-q">Is SmackCheck free?<span className="ic">+</span></summary>
-                  <div className="faq-a"><p>Yes — completely free in beta, no ads. We'll launch an optional Pro tier later for power users (advanced analytics, trip planning, restaurant‑side tools), but the core scoring will always be free.</p></div>
+                  <div className="faq-a"><p>Yes  completely free in beta, no ads. We'll launch an optional Pro tier later for power users (advanced analytics, trip planning, restaurant‑side tools), but the core scoring will always be free.</p></div>
                 </details>
               </div>
             </div>

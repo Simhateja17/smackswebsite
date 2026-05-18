@@ -15,7 +15,7 @@ export default function Home() {
                 <span className="chip chip-brand"><span className="glow-dot"></span> AI Dish Analysis · Now in beta</span>
               </div>
               <h1 className="h-display">Every dish<br/>gets a <span className="accent">smack score</span>.</h1>
-              <p className="lede hero-sub">SmackCheck is the social food app that scores what you eat with AI — so you stop second‑guessing menus and start finding the best plate in every city.</p>
+              <p className="lede hero-sub">SmackCheck is the social food app that scores what you eat with AI  so you stop second‑guessing menus and start finding the best plate in every city.</p>
               <div className="hero-cta">
                 <Link href="/download" className="btn btn-primary" style={{ background: "var(--rose)" }}>
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.6 2.1-3.8 2.2-3.9-1.2-1.7-3-2-3.7-2-1.6-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.5 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.2 3.1-2.5.7-1 1.3-2.4 1.3-2.4-1-.4-3-1.4-3-3.5z"/></svg>
@@ -89,23 +89,23 @@ export default function Home() {
         <div className="rail">
           <div className="rail-track">
             <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>01 — FEED</div>
+              <div className="mono" style={{ marginBottom: 14 }}>01  FEED</div>
               <Phone><FeedScreen /></Phone>
             </div>
             <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>02 — CAPTURE & AI</div>
+              <div className="mono" style={{ marginBottom: 14 }}>02  CAPTURE & AI</div>
               <Phone><CaptureScreen /></Phone>
             </div>
             <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>03 — MAP</div>
+              <div className="mono" style={{ marginBottom: 14 }}>03  MAP</div>
               <Phone><MapScreen /></Phone>
             </div>
             <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>04 — LEADERBOARD</div>
+              <div className="mono" style={{ marginBottom: 14 }}>04  LEADERBOARD</div>
               <Phone><LeaderboardScreen /></Phone>
             </div>
             <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>05 — PROFILE</div>
+              <div className="mono" style={{ marginBottom: 14 }}>05  PROFILE</div>
               <Phone><ProfileScreen /></Phone>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="feat-card tall dark">
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7z"/></svg></span>AI Dish Analysis</div>
               <h3>The smack score, calculated.</h3>
-              <p>Snap a plate. Our model scores plating, craft, value and authenticity in under a second — then tags the dish, cuisine and likely ingredients.</p>
+              <p>Snap a plate. Our model scores plating, craft, value and authenticity in under a second  then tags the dish, cuisine and likely ingredients.</p>
               <div style={{ position: "absolute", bottom: -20, left: "50%", transform: "translateX(-50%)" }}>
                 <Phone size="sm"><CaptureScreen /></Phone>
               </div>
@@ -131,7 +131,7 @@ export default function Home() {
             <div className="feat-card">
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-5a8 8 0 1 1 16-3z"/></svg></span>Social Feed</div>
               <h3>Follow taste, not influencers.</h3>
-              <p>A feed of real dishes from real people, ranked by how good the food actually is — not how many filters they used.</p>
+              <p>A feed of real dishes from real people, ranked by how good the food actually is  not how many filters they used.</p>
             </div>
             <div className="feat-card">
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 8l4 8h12l4-8-6 4-4-8-4 8z"/></svg></span>XP & Levels</div>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div className="feat-card wide">
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/></svg></span>Social Map</div>
-              <h3>The best plate on every block — pinned.</h3>
+              <h3>The best plate on every block  pinned.</h3>
               <p>A live map of the highest‑smacked dishes near you, filtered by cuisine, price, vibe or your friends. No more &quot;where should we eat?&quot;</p>
               <div style={{ position: "absolute", right: -30, bottom: -40, width: 260, height: 260, borderRadius: "50%", background: "radial-gradient(circle,rgba(100,34,35,.10),transparent 60%)" }}></div>
             </div>
@@ -160,11 +160,11 @@ export default function Home() {
             <div>
               <span className="eyebrow">AI dish analysis</span>
               <h2 className="h-1" style={{ marginTop: 16 }}>The model that learned<br/>to actually <span className="accent">taste</span>.</h2>
-              <p className="lede" style={{ marginTop: 22 }}>We trained on 4.2M smacked dishes across 180 cuisines. Now SmackCheck can recognize, score and explain your plate — and tell you why it works.</p>
+              <p className="lede" style={{ marginTop: 22 }}>We trained on 4.2M smacked dishes across 180 cuisines. Now SmackCheck can recognize, score and explain your plate  and tell you why it works.</p>
               <div className="ai-stack" style={{ marginTop: 36 }}>
                 <div className="ai-step"><div className="ai-step-num">1</div><div><h4>Vision pass</h4><p>Identifies the dish, plating style, portion, garnish and likely cuisine.</p></div></div>
                 <div className="ai-step"><div className="ai-step-num">2</div><div><h4>Flavor model</h4><p>Cross‑references 4.2M dishes to estimate technique, freshness signals and seasoning balance.</p></div></div>
-                <div className="ai-step"><div className="ai-step-num">3</div><div><h4>Smack score</h4><p>A 0–10 score with plating, craft and value breakdowns — plus a one‑line tasting note.</p></div></div>
+                <div className="ai-step"><div className="ai-step-num">3</div><div><h4>Smack score</h4><p>A 0–10 score with plating, craft and value breakdowns  plus a one‑line tasting note.</p></div></div>
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -270,13 +270,13 @@ export default function Home() {
               <div className="cell">Beli</div>
               <div className="cell">Untappd</div>
             </div>
-            <div className="compare-row"><div className="feat-name">AI dish‑level scoring</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div></div>
-            <div className="compare-row"><div className="feat-name">Per‑dish ratings (not restaurant)</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
-            <div className="compare-row"><div className="feat-name">XP, levels & streaks</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
-            <div className="compare-row"><div className="feat-name">Friend leaderboards</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div></div>
-            <div className="compare-row"><div className="feat-name">Stories & social feed</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div></div>
-            <div className="compare-row"><div className="feat-name">Live trending map</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell"><span className="compare-x">—</span></div></div>
-            <div className="compare-row"><div className="feat-name">Free, no ads</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x">—</span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
+            <div className="compare-row"><div className="feat-name">AI dish‑level scoring</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div></div>
+            <div className="compare-row"><div className="feat-name">Per‑dish ratings (not restaurant)</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
+            <div className="compare-row"><div className="feat-name">XP, levels & streaks</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
+            <div className="compare-row"><div className="feat-name">Friend leaderboards</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div></div>
+            <div className="compare-row"><div className="feat-name">Stories & social feed</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div></div>
+            <div className="compare-row"><div className="feat-name">Live trending map</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell"><span className="compare-x"></span></div></div>
+            <div className="compare-row"><div className="feat-name">Free, no ads</div><div className="cell yes smack-col"><span className="compare-check">✓</span></div><div className="cell"><span className="compare-x"></span></div><div className="cell yes"><span className="compare-check">✓</span></div><div className="cell yes"><span className="compare-check">✓</span></div></div>
           </div>
         </div>
       </section>
@@ -291,7 +291,7 @@ export default function Home() {
           <div className="test-grid">
             <div className="test-card">
               <div className="test-stars">★★★★★</div>
-              <p className="quote">&quot;I deleted Beli the day I downloaded SmackCheck. The AI score actually tracks with what my friends and I think — it&apos;s wild.&quot;</p>
+              <p className="quote">&quot;I deleted Beli the day I downloaded SmackCheck. The AI score actually tracks with what my friends and I think  it&apos;s wild.&quot;</p>
               <div className="test-author"><div className="av"></div><div><div className="name">Camila R.</div><div className="sub">Brooklyn · 612 smacks</div></div></div>
             </div>
             <div className="test-card">

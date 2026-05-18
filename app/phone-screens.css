@@ -1,4 +1,4 @@
-/* SmackCheck — App Screen Mocks (light theme, matches Figma)
+/* SmackCheck  App Screen Mocks (light theme, matches Figma)
    Cream background, white cards, deep wine accents */
 
 .phone {
@@ -119,7 +119,7 @@
 .story-avatar.add .inner { background: #fff; display: grid; place-items: center; color: #642223; font-size: 22px; font-weight: 300; }
 .story-name { font-size: 10px; color: #6F6864; margin-top: 6px; max-width: 56px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
 
-/* Dish card — horizontal scroll */
+/* Dish card  horizontal scroll */
 .dish-row { display: flex; gap: 12px; padding: 4px 18px 16px; overflow: hidden; }
 .dish-card {
   flex-shrink: 0; width: 168px;

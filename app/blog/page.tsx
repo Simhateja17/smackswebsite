@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — SmackCheck",
+  title: "Blog  SmackCheck",
   description: "Food guides, restaurant spotlights, community stories and product updates from the SmackCheck team.",
 };
 
@@ -27,7 +27,7 @@ export default function Blog() {
                 <span>City Guide</span><span className="dot"></span><span>14 min read</span><span className="dot"></span><span>May 12, 2026</span>
               </div>
               <h2>The 15 best birria tacos in NYC, scored.</h2>
-              <p>We ate at 47 birrierias from the Bronx to Bay Ridge over three weeks. The Smack Score didn't lie — but the top three weren't where we expected. A field guide for the consommé‑obsessed.</p>
+              <p>We ate at 47 birrierias from the Bronx to Bay Ridge over three weeks. The Smack Score didn't lie  but the top three weren't where we expected. A field guide for the consommé‑obsessed.</p>
               <div className="blog-author">
                 <div className="av"></div>
                 <span className="name">Maya Chen · Co‑founder</span>
@@ -89,7 +89,7 @@ export default function Blog() {
               <div className="blog-thumb t6"><span className="pill">Product</span></div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Update</span><span className="dot"></span><span>3 min</span></div>
-                <h3>What's new in v0.9.2 — Map heatmaps &amp; group trip planning.</h3>
+                <h3>What's new in v0.9.2  Map heatmaps &amp; group trip planning.</h3>
                 <p>Faster map, smarter filters, and you can now plan a whole eating trip with three friends.</p>
                 <div className="blog-author"><div className="av" style={{ background: "linear-gradient(135deg,#6FCFB1,#2a5a4e)" }}></div><span className="name">Marcus Toledo</span></div>
               </div>
@@ -130,7 +130,7 @@ export default function Blog() {
               <div className="blog-body">
                 <div className="blog-meta"><span>Engineering</span><span className="dot"></span><span>8 min</span></div>
                 <h3>What we got wrong about regional Mexican food (and how we fixed it).</h3>
-                <p>Why the model was scoring Oaxacan dishes 0.4 too low — and how we built the fix.</p>
+                <p>Why the model was scoring Oaxacan dishes 0.4 too low  and how we built the fix.</p>
                 <div className="blog-author"><div className="av" style={{ background: "linear-gradient(135deg,#6FCFB1,#2a5a4e)" }}></div><span className="name">Marcus Toledo</span></div>
               </div>
             </article>

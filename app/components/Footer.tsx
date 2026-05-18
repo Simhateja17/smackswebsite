@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-col footer-brand">
             <div className="nav-logo"><LogoMark size={34} /><span style={{ fontSize: 18 }}>SmackCheck</span></div>
-            <p>The social food app that scores every dish with AI. Capture, rate, level up — and find the best plate in every city.</p>
+            <p>The social food app that scores every dish with AI. Capture, rate, level up  and find the best plate in every city.</p>
             <div style={{ display: "flex", gap: 10, marginTop: 18 }}>
               <a href="#" className="chip">𝕏 Twitter</a>
               <a href="#" className="chip">IG</a>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Phone, { CaptureScreen, FeedScreen, MapScreen } from "../components/Phone";
 
 export const metadata: Metadata = {
-  title: "How it works — SmackCheck",
+  title: "How it works  SmackCheck",
   description: "From plate to score in 800ms. Walk through how SmackCheck captures, analyzes, rates and shares every dish.",
 };
 
@@ -14,7 +14,7 @@ export default function HowItWorks() {
         <div className="wrap-narrow" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ justifyContent: "center" }}>How it works</span>
           <h1 className="h-display">From plate to score<br/>in <span className="accent">800 milliseconds</span>.</h1>
-          <p className="lede" style={{ margin: "26px auto 0" }}>Five steps, one tap each. The hard part — actually scoring the food — happens on‑device while your camera shutter is still closing.</p>
+          <p className="lede" style={{ margin: "26px auto 0" }}>Five steps, one tap each. The hard part  actually scoring the food  happens on‑device while your camera shutter is still closing.</p>
         </div>
       </section>
 
@@ -36,7 +36,7 @@ export default function HowItWorks() {
             <div className="num-big">01</div>
             <span className="eyebrow">Capture</span>
             <h2 className="h-1" style={{ marginTop: 14 }}>A camera that knows food.</h2>
-            <p className="lede">Open the app — you're on capture by default. Tap once for a quick score, hold for a stack of frames so the AI picks the best plating angle automatically.</p>
+            <p className="lede">Open the app  you're on capture by default. Tap once for a quick score, hold for a stack of frames so the AI picks the best plating angle automatically.</p>
             <ul style={{ marginTop: 24, listStyle: "none", display: "flex", flexDirection: "column", gap: 10, color: "var(--text-dim)", fontSize: 15 }}>
               <li>• On‑device camera, no upload until you confirm</li>
               <li>• Auto‑levels &amp; warms the photo for natural light</li>
@@ -51,7 +51,7 @@ export default function HowItWorks() {
             <div className="num-big">02</div>
             <span className="eyebrow">AI Analysis</span>
             <h2 className="h-1" style={{ marginTop: 14 }}>Sub‑second smack score.</h2>
-            <p className="lede">The model identifies the dish, then a flavor pass scores plating, craft and value with confidence. You see the reasoning — not a black box.</p>
+            <p className="lede">The model identifies the dish, then a flavor pass scores plating, craft and value with confidence. You see the reasoning  not a black box.</p>
             <div className="timing-strip">
               <div className="timing-card"><div className="v">800ms</div><div className="l">Median inference</div></div>
               <div className="timing-card"><div className="v">12.4k</div><div className="l">Named dishes</div></div>
@@ -69,7 +69,7 @@ export default function HowItWorks() {
             <h2 className="h-1" style={{ marginTop: 14 }}>Your taste, your call.</h2>
             <p className="lede">The AI gives you a smack score. You can accept it, slide it, or split it into your own plating / craft / value notes. Every override teaches the model your palate.</p>
             <ul style={{ marginTop: 24, listStyle: "none", display: "flex", flexDirection: "column", gap: 10, color: "var(--text-dim)", fontSize: 15 }}>
-              <li>• 0.0–10.0 in 0.1 increments — precision matters</li>
+              <li>• 0.0–10.0 in 0.1 increments  precision matters</li>
               <li>• Add a one‑line tasting note (or three paragraphs)</li>
               <li>• Tag who you were with, what you drank, what you wore</li>
             </ul>
@@ -82,7 +82,7 @@ export default function HowItWorks() {
             <div className="num-big">04</div>
             <span className="eyebrow">Share</span>
             <h2 className="h-1" style={{ marginTop: 14 }}>Drop the smack.</h2>
-            <p className="lede">Post to your feed, send to one friend, or keep it private. Either way it earns XP and feeds the city map — anonymously, if you choose.</p>
+            <p className="lede">Post to your feed, send to one friend, or keep it private. Either way it earns XP and feeds the city map  anonymously, if you choose.</p>
             <ul style={{ marginTop: 24, listStyle: "none", display: "flex", flexDirection: "column", gap: 10, color: "var(--text-dim)", fontSize: 15 }}>
               <li>• Public, friends‑only, or solo per smack</li>
               <li>• Group chat stories &amp; trip albums</li>
@@ -101,7 +101,7 @@ export default function HowItWorks() {
             <ul style={{ marginTop: 24, listStyle: "none", display: "flex", flexDirection: "column", gap: 10, color: "var(--text-dim)", fontSize: 15 }}>
               <li>• Heatmaps refresh every 5 minutes</li>
               <li>• Filter by cuisine, price, walk distance, friends</li>
-              <li>• Curated city guides — &quot;Best ramen in NYC, scored&quot;</li>
+              <li>• Curated city guides  &quot;Best ramen in NYC, scored&quot;</li>
             </ul>
           </div>
           <div className="phone-wrap"><Phone><MapScreen /></Phone></div>

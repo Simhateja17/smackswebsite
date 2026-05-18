@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — SmackCheck",
+  title: "Privacy Policy  SmackCheck",
   description: "SmackCheck Privacy Policy. GDPR & CCPA compliant. AI disclosure included.",
 };
 
@@ -67,7 +67,7 @@ export default function Privacy() {
               <h2 id="use">2. How we use your information</h2>
               <p>We use your data to:</p>
               <ul>
-                <li>Run the app — show you your feed, your map, your friends, your XP.</li>
+                <li>Run the app  show you your feed, your map, your friends, your XP.</li>
                 <li>Score dishes (the AI model needs the photo to do its job).</li>
                 <li>Send notifications you opted into.</li>
                 <li>Improve product quality and AI accuracy (using aggregated, de‑identified data).</li>
@@ -89,7 +89,7 @@ export default function Privacy() {
               </table>
 
               <h2 id="ai">4. AI disclosure</h2>
-              <p>SmackCheck uses machine‑learning models — primarily on‑device inference plus a server‑side flavor model — to recognize dishes and produce a smack score. <strong>Important:</strong></p>
+              <p>SmackCheck uses machine‑learning models  primarily on‑device inference plus a server‑side flavor model  to recognize dishes and produce a smack score. <strong>Important:</strong></p>
               <ul>
                 <li>Scores are estimates. They are not a substitute for human taste.</li>
                 <li>The model has known weaknesses on niche regional cuisines; we publish accuracy stats per cuisine in‑app.</li>
@@ -104,7 +104,7 @@ export default function Privacy() {
               <p>Under GDPR (EU) and CCPA (California), you have the right to access, correct, export, delete, and restrict processing of your personal data. To exercise any right:</p>
               <ul>
                 <li>In‑app: <code>Settings → Privacy</code> includes self‑serve export &amp; delete.</li>
-                <li>By email: <a href="mailto:privacy@smackcheck.app">privacy@smackcheck.app</a> — we respond within 14 days.</li>
+                <li>By email: <a href="mailto:privacy@smackcheck.app">privacy@smackcheck.app</a>  we respond within 14 days.</li>
               </ul>
               <p>You can also lodge a complaint with your local supervisory authority.</p>
 

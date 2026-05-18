@@ -3,7 +3,7 @@ import Link from "next/link";
 import Phone, { CaptureScreen, FeedScreen, MapScreen, LeaderboardScreen, ProfileScreen } from "../components/Phone";
 
 export const metadata: Metadata = {
-  title: "Features — SmackCheck",
+  title: "Features  SmackCheck",
   description: "A deep dive into every SmackCheck feature: AI dish analysis, social feed, stories, leaderboards, challenges, XP, badges, social map and trending discovery.",
 };
 
@@ -14,7 +14,7 @@ export default function Features() {
         <div className="wrap-narrow" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ justifyContent: "center" }}>Features</span>
           <h1 className="h-display">Built for people<br/>who take food <span className="accent">seriously</span>.</h1>
-          <p className="lede" style={{ margin: "26px auto 0" }}>Nine features. One obsession: helping you find — and remember — the dishes worth eating again.</p>
+          <p className="lede" style={{ margin: "26px auto 0" }}>Nine features. One obsession: helping you find  and remember  the dishes worth eating again.</p>
         </div>
       </section>
 
@@ -23,12 +23,12 @@ export default function Features() {
           <div>
             <span className="chip chip-brand"><span className="glow-dot"></span> AI</span>
             <h2 className="h-1">AI dish analysis that <span style={{ color: "var(--brand)" }}>actually tastes</span>.</h2>
-            <p className="lede">Point your camera. Get a smack score in 800ms. Trained on 4.2M dishes, the model breaks down plating, craft, value and authenticity — then tags the cuisine and ingredients so you can search your own history later.</p>
+            <p className="lede">Point your camera. Get a smack score in 800ms. Trained on 4.2M dishes, the model breaks down plating, craft, value and authenticity  then tags the cuisine and ingredients so you can search your own history later.</p>
             <ul>
               <li>180 cuisines and 12,400 named dishes recognized</li>
               <li>Sub‑second on‑device inference, no upload required</li>
               <li>Confidence score &amp; reasoning shown for every result</li>
-              <li>Override the AI — your taste is the source of truth</li>
+              <li>Override the AI  your taste is the source of truth</li>
             </ul>
           </div>
           <div className="phone-wrap"><Phone><CaptureScreen /></Phone></div>
@@ -58,7 +58,7 @@ export default function Features() {
               <li>City heatmaps update in real time</li>
               <li>Smart filters: under $20, walkable, open late, group‑friendly</li>
               <li>Save lists, share routes, drop pins for later</li>
-              <li>Works offline — your saves come with you on the plane</li>
+              <li>Works offline  your saves come with you on the plane</li>
             </ul>
           </div>
           <div className="phone-wrap"><Phone><MapScreen /></Phone></div>
@@ -70,10 +70,10 @@ export default function Features() {
             <h2 className="h-1">Compete with your group chat.</h2>
             <p className="lede">Climb global, friends and city leaderboards. Earn XP for every smack, double XP for new cuisines, and crown a Taste Champion every month.</p>
             <ul>
-              <li>Friends, city &amp; global boards — refresh weekly</li>
+              <li>Friends, city &amp; global boards  refresh weekly</li>
               <li>Streak multipliers reward consistency over volume</li>
               <li>Seasons end with city‑specific trophies</li>
-              <li>Friendly rivalry, not a casino — anti‑grind by design</li>
+              <li>Friendly rivalry, not a casino  anti‑grind by design</li>
             </ul>
           </div>
           <div className="phone-wrap"><Phone><LeaderboardScreen /></Phone></div>
@@ -83,7 +83,7 @@ export default function Features() {
           <div>
             <span className="chip chip-brand">XP &amp; Badges</span>
             <h2 className="h-1">Your taste, leveled up.</h2>
-            <p className="lede">Every smack earns XP. Hit streaks, unlock cuisines, and grow from Snacker to Master Palate — with 64 badges across discovery, range, depth, and consistency.</p>
+            <p className="lede">Every smack earns XP. Hit streaks, unlock cuisines, and grow from Snacker to Master Palate  with 64 badges across discovery, range, depth, and consistency.</p>
             <ul>
               <li>14 levels from Snacker to Master Palate</li>
               <li>64 badges across discovery, range, depth &amp; consistency</li>

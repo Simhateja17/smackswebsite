@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="wrap-narrow" style={{ textAlign: "center" }}>
           <span className="eyebrow" style={{ justifyContent: "center" }}>Contact</span>
           <h1 className="h-display">Say <span className="accent">hello</span>.</h1>
-          <p className="lede" style={{ margin: "26px auto 0" }}>Real humans, fast replies. Pick a lane below or fill the form — whichever's faster.</p>
+          <p className="lede" style={{ margin: "26px auto 0" }}>Real humans, fast replies. Pick a lane below or fill the form  whichever's faster.</p>
         </div>
       </section>
 

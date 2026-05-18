@@ -7,8 +7,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "SmackCheck — Rate every dish. Level up your taste.",
-  description: "SmackCheck is the social food app that uses AI to score every dish you eat. Capture, rate, share — and find the best plate in every city.",
+  title: "SmackCheck  Rate every dish. Level up your taste.",
+  description: "SmackCheck is the social food app that uses AI to score every dish you eat. Capture, rate, share  and find the best plate in every city.",
 };
 
 export default function RootLayout({
