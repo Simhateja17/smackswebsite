@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — SmackCheck</title>
+<meta name="description" content="Support, partnerships, and press inquiries for SmackCheck." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; padding: 40px 0 100px; align-items: start; }
+  @media (max-width: 980px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .contact-card {
+    padding: 24px; border-radius: var(--r-md);
+    background: var(--surface); border: 1px solid var(--border);
+    display: flex; gap: 16px; align-items: flex-start;
+    margin-bottom: 14px;
+    transition: border-color .2s ease;
+  }
+  .contact-card:hover { border-color: var(--border-strong); }
+  .contact-card .ic { width: 44px; height: 44px; border-radius: 12px; background: rgba(100,34,35,.10); border: 1px solid var(--border-brand); display: grid; place-items: center; color: var(--brand); flex-shrink: 0; }
+  .contact-card h3 { font-size: 16px; }
+  .contact-card p { font-size: 13px; color: var(--text-dim); margin: 4px 0 8px; line-height: 1.5; }
+  .contact-card a { color: var(--brand); font-size: 13px; font-weight: 600; }
+
+  .form-card {
+    padding: 32px; border-radius: var(--r-lg);
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+  .form-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+  .form-row label { font-size: 12px; color: var(--text-mute); letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+  .form-row input, .form-row textarea, .form-row select {
+    width: 100%; padding: 14px 16px; font: inherit; font-size: 14px;
+    background: var(--bg-soft); border: 1px solid var(--border-strong); border-radius: 12px;
+    color: var(--text); outline: none; transition: border-color .15s ease;
+    font-family: inherit;
+  }
+  .form-row input:focus, .form-row textarea:focus, .form-row select:focus { border-color: var(--border-brand); }
+  .form-row textarea { min-height: 130px; resize: vertical; }
+  .form-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-card .btn { width: 100%; margin-top: 8px; }
+
+  .office-strip {
+    display: flex; align-items: center; gap: 28px;
+    padding: 24px; border-radius: var(--r-md);
+    background: var(--surface); border: 1px solid var(--border); margin-top: 16px;
+  }
+  .office-strip .dot { width: 10px; height: 10px; border-radius: 50%; background: #6FB69A; box-shadow: 0 0 10px #6FB69A; }
+  .office-strip .info { flex: 1; font-size: 13px; }
+  .office-strip .info b { color: var(--text); }
+</style>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-hero">
+  <div class="wrap-narrow" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">Contact</span>
+    <h1 class="h-display">Say <span class="accent">hello</span>.</h1>
+    <p class="lede" style="margin:26px auto 0;">Real humans, fast replies. Pick a lane below or fill the form — whichever's faster.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a9 9 0 0 1-9 9 9 9 0 0 1-7-3.5L3 21l4-2.5a9 9 0 1 1 14-7z"/></svg></div>
+          <div style="flex:1;">
+            <h3>Support</h3>
+            <p>Stuck on something? Found a bug? We typically reply within 4 hours during the day.</p>
+            <a href="mailto:help@smackcheck.app">help@smackcheck.app →</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM12 14a8 8 0 0 0-8 8h12M19 18l3 3M22 18l-3 3"/></svg></div>
+          <div style="flex:1;">
+            <h3>Partnerships</h3>
+            <p>Restaurants, chefs, city editors, dish creators. Let's build something together.</p>
+            <a href="mailto:partners@smackcheck.app">partners@smackcheck.app →</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4zM4 9h16M8 12h4M8 15h6"/></svg></div>
+          <div style="flex:1;">
+            <h3>Press</h3>
+            <p>Embargo? Quote? Founder interview? We're happy to chat.</p>
+            <a href="mailto:press@smackcheck.app">press@smackcheck.app →</a>
+            &nbsp;·&nbsp;<a href="press.html">Press kit →</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21v-1a8 8 0 0 1 16 0v1M11 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/></svg></div>
+          <div style="flex:1;">
+            <h3>Careers</h3>
+            <p>Engineers, designers, chefs‑in‑residence. We're small but growing.</p>
+            <a href="mailto:hiring@smackcheck.app">hiring@smackcheck.app →</a>
+          </div>
+        </div>
+
+        <div class="office-strip">
+          <span class="dot"></span>
+          <div class="info"><b>SmackCheck Labs HQ</b><br/><span style="color:var(--text-dim);">68 Jay Street · Brooklyn, NY 11201</span></div>
+          <div class="mono">Open now</div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 class="h-3" style="margin-bottom:6px;">Send us a note</h3>
+        <p style="color:var(--text-dim);font-size:14px;margin-bottom:24px;">We read everything. Reply within one business day.</p>
+        <form onsubmit="event.preventDefault();const b=this.querySelector('button');b.textContent='Sent ✓';b.disabled=true;">
+          <div class="form-cols">
+            <div class="form-row"><label>Your name</label><input required placeholder="Maya Chen" /></div>
+            <div class="form-row"><label>Email</label><input type="email" required placeholder="you@email.com" /></div>
+          </div>
+          <div class="form-row"><label>What's this about?</label>
+            <select>
+              <option>Support / bug report</option>
+              <option>Partnership inquiry</option>
+              <option>Press / interview</option>
+              <option>Careers</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-row"><label>Message</label><textarea required placeholder="Tell us what's on your mind…"></textarea></div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js"></script>
+<script>scMount('Contact');</script>
+</body>
+</html>

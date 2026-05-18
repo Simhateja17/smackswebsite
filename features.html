@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Features — SmackCheck</title>
+<meta name="description" content="A deep dive into every SmackCheck feature: AI dish analysis, social feed, stories, leaderboards, challenges, XP, badges, social map and trending discovery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="phone-screens.css" />
+<style>
+  .deep-feat { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 100px 0; border-top: 1px solid var(--border); }
+  .deep-feat.reverse > div:first-child { order: 2; }
+  .deep-feat:first-of-type { border-top: none; padding-top: 40px; }
+  .deep-feat h2 { margin-top: 16px; max-width: 480px; }
+  .deep-feat .lede { margin-top: 18px; }
+  .deep-feat ul { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+  .deep-feat ul li { display: flex; gap: 12px; font-size: 15px; color: var(--text-dim); line-height: 1.5; }
+  .deep-feat ul li::before { content: "✓"; width: 18px; height: 18px; border-radius: 50%; background: var(--brand); display: grid; place-items: center; flex-shrink: 0; margin-top: 3px; color: #fff; font-size: 10px; font-weight: 800; line-height: 1; }
+  .deep-feat .phone-wrap { display: flex; justify-content: center; position: relative; }
+  .deep-feat .phone-wrap::before {
+    content: ""; position: absolute; inset: -40px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(100,34,35,.10), transparent 60%);
+    z-index: -1;
+  }
+  @media (max-width: 980px) {
+    .deep-feat { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+    .deep-feat.reverse > div:first-child { order: 0; }
+  }
+
+  .badge-showcase { padding: 80px 0; }
+  .badge-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; margin-top: 40px; }
+  .bs-card { padding: 22px 16px; text-align: center; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--border); }
+  .bs-circle { width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 12px; display: grid; place-items: center; }
+  .bs-circle.brand { background: linear-gradient(135deg, rgba(100,34,35,.18), rgba(100,34,35,.18)); border: 1px solid var(--border-brand); color: var(--brand); }
+  .bs-circle.gold { background: linear-gradient(135deg, rgba(224,169,92,.3), rgba(120,80,30,.18)); border: 1px solid rgba(224,169,92,.4); color: var(--gold); }
+  .bs-circle.mint { background: linear-gradient(135deg, rgba(111,207,177,.25), rgba(42,90,78,.15)); border: 1px solid rgba(111,207,177,.4); color: #6FB69A; }
+  .bs-circle.sky { background: linear-gradient(135deg, rgba(107,168,224,.25), rgba(40,69,110,.15)); border: 1px solid rgba(107,168,224,.4); color: #5A8FBF; }
+  .bs-card .name { font-size: 13px; font-weight: 700; }
+  .bs-card .desc { font-size: 11px; color: var(--text-mute); margin-top: 4px; line-height: 1.35; }
+  @media (max-width: 880px) { .badge-row { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-hero" data-screen-label="01 Header">
+  <div class="wrap-narrow" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">Features</span>
+    <h1 class="h-display">Built for people<br/>who take food <span class="accent">seriously</span>.</h1>
+    <p class="lede" style="margin: 26px auto 0;">Nine features. One obsession: helping you find — and remember — the dishes worth eating again.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="deep-feat" data-screen-label="02 AI">
+    <div>
+      <span class="chip chip-brand"><span class="glow-dot"></span> AI</span>
+      <h2 class="h-1">AI dish analysis that <span style="color:var(--brand);">actually tastes</span>.</h2>
+      <p class="lede">Point your camera. Get a smack score in 800ms. Trained on 4.2M dishes, the model breaks down plating, craft, value and authenticity — then tags the cuisine and ingredients so you can search your own history later.</p>
+      <ul>
+        <li>180 cuisines and 12,400 named dishes recognized</li>
+        <li>Sub‑second on‑device inference, no upload required</li>
+        <li>Confidence score &amp; reasoning shown for every result</li>
+        <li>Override the AI — your taste is the source of truth</li>
+      </ul>
+    </div>
+    <div class="phone-wrap" id="p1"></div>
+  </div>
+
+  <div class="deep-feat reverse" data-screen-label="03 Feed">
+    <div>
+      <span class="chip chip-brand">Feed</span>
+      <h2 class="h-1">A social feed for taste, not vibes.</h2>
+      <p class="lede">Real plates from real eaters, ranked by how good the food actually is. No sponsored posts. No filters that make a sandwich look like a sunset.</p>
+      <ul>
+        <li>Follow friends, chefs and city‑specific curators</li>
+        <li>Save dishes to taste‑maps that travel with you</li>
+        <li>Comment, react, and quote‑smack like a tasting note</li>
+        <li>Privacy controls: public, friends‑only, or solo</li>
+      </ul>
+    </div>
+    <div class="phone-wrap" id="p2"></div>
+  </div>
+
+  <div class="deep-feat" data-screen-label="04 Map">
+    <div>
+      <span class="chip chip-brand">Map</span>
+      <h2 class="h-1">The best plate on every block.</h2>
+      <p class="lede">A live map of the highest‑smacked dishes near you. Filter by cuisine, price, vibe, dietary, or your friends. The "where should we eat?" group chat is dead.</p>
+      <ul>
+        <li>City heatmaps update in real time</li>
+        <li>Smart filters: under $20, walkable, open late, group‑friendly</li>
+        <li>Save lists, share routes, drop pins for later</li>
+        <li>Works offline — your saves come with you on the plane</li>
+      </ul>
+    </div>
+    <div class="phone-wrap" id="p3"></div>
+  </div>
+
+  <div class="deep-feat reverse" data-screen-label="05 Leaderboard">
+    <div>
+      <span class="chip chip-brand">Leaderboard</span>
+      <h2 class="h-1">Compete with your group chat.</h2>
+      <p class="lede">Climb global, friends and city leaderboards. Earn XP for every smack, double XP for new cuisines, and crown a Taste Champion every month.</p>
+      <ul>
+        <li>Friends, city &amp; global boards — refresh weekly</li>
+        <li>Streak multipliers reward consistency over volume</li>
+        <li>Seasons end with city‑specific trophies</li>
+        <li>Friendly rivalry, not a casino — anti‑grind by design</li>
+      </ul>
+    </div>
+    <div class="phone-wrap" id="p4"></div>
+  </div>
+
+  <div class="deep-feat" data-screen-label="06 Profile">
+    <div>
+      <span class="chip chip-brand">XP &amp; Badges</span>
+      <h2 class="h-1">Your taste, leveled up.</h2>
+      <p class="lede">Every smack earns XP. Hit streaks, unlock cuisines, and grow from Snacker to Master Palate — with 64 badges across discovery, range, depth, and consistency.</p>
+      <ul>
+        <li>14 levels from Snacker to Master Palate</li>
+        <li>64 badges across discovery, range, depth &amp; consistency</li>
+        <li>Stories, challenges and weekly missions feed your XP</li>
+        <li>Your profile is a public résumé of your taste</li>
+      </ul>
+    </div>
+    <div class="phone-wrap" id="p5"></div>
+  </div>
+</div>
+
+<section class="badge-showcase">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Badges</span>
+      <h2 class="h-1">64 ways to flex your palate.</h2>
+    </div>
+    <div class="badge-row">
+      <div class="bs-card"><div class="bs-circle brand">🔥</div><div class="name">First Smack</div><div class="desc">Score your first dish</div></div>
+      <div class="bs-card"><div class="bs-circle gold">👑</div><div class="name">City Champion</div><div class="desc">#1 in your city</div></div>
+      <div class="bs-card"><div class="bs-circle brand">⚡</div><div class="name">30‑Day Streak</div><div class="desc">A month, daily</div></div>
+      <div class="bs-card"><div class="bs-circle mint">🌿</div><div class="name">Globe Trotter</div><div class="desc">15 cuisines logged</div></div>
+      <div class="bs-card"><div class="bs-circle sky">🥟</div><div class="name">Dumpling Devotee</div><div class="desc">50 dumplings smacked</div></div>
+      <div class="bs-card"><div class="bs-circle gold">⭐</div><div class="name">Perfect 10</div><div class="desc">Find a 10.0 dish</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:100px 0;">
+  <div class="wrap-narrow" style="text-align:center;">
+    <h2 class="h-display">Ready to <span class="accent">start scoring</span>?</h2>
+    <div style="display:flex;gap:14px;justify-content:center;margin-top:30px;flex-wrap:wrap;">
+      <a href="download.html" class="btn btn-primary">Download SmackCheck</a>
+      <a href="how-it-works.html" class="btn btn-ghost">See how it works</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="screens.js"></script>
+<script src="partials.js"></script>
+<script>
+  document.getElementById('p1').innerHTML = scPhone(scCapture());
+  document.getElementById('p2').innerHTML = scPhone(scFeed());
+  document.getElementById('p3').innerHTML = scPhone(scMap());
+  document.getElementById('p4').innerHTML = scPhone(scLeaderboard());
+  document.getElementById('p5').innerHTML = scPhone(scProfile());
+  scMount('Features');
+</script>
+</body>
+</html>

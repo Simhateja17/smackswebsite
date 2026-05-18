@@ -1,0 +1,126 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — SmackCheck",
+  description: "SmackCheck Privacy Policy. GDPR & CCPA compliant. AI disclosure included.",
+};
+
+export default function Privacy() {
+  return (
+    <main>
+      <section className="page-hero">
+        <div className="wrap-narrow" style={{ textAlign: "center" }}>
+          <span className="eyebrow" style={{ justifyContent: "center" }}>Legal</span>
+          <h1 className="h-display">Privacy <span className="accent">Policy</span></h1>
+          <p className="lede" style={{ margin: "26px auto 0" }}>Plain English, then the legal text. Both versions matter.</p>
+        </div>
+      </section>
+
+      <section>
+        <div className="wrap">
+          <div className="legal-grid">
+            <aside className="legal-side">
+              <h5>On this page</h5>
+              <a href="#summary" className="active">Plain‑English summary</a>
+              <a href="#collect">What we collect</a>
+              <a href="#use">How we use it</a>
+              <a href="#share">Third parties</a>
+              <a href="#ai">AI disclosure</a>
+              <a href="#retention">Retention</a>
+              <a href="#rights">Your rights (GDPR/CCPA)</a>
+              <a href="#minors">Minors</a>
+              <a href="#changes">Changes</a>
+              <a href="#contact">Contact</a>
+            </aside>
+
+            <div className="legal-body">
+              <div className="legal-meta">
+                <div><b>Effective:</b> May 1, 2026</div>
+                <div><b>Last updated:</b> May 12, 2026</div>
+                <div><b>Version:</b> 2.1</div>
+              </div>
+
+              <h2 id="summary">Plain‑English summary</h2>
+              <p>SmackCheck is a social food app. We collect what we need to show you good food and remember your taste. We don't sell your data. Photos stay on your phone unless you post them. You can export or delete everything from <code>Settings → Privacy</code>.</p>
+              <ul>
+                <li><strong>Photos:</strong> analyzed on your device. Only uploaded when you choose to post.</li>
+                <li><strong>Email + handle:</strong> required to make an account.</li>
+                <li><strong>Location:</strong> optional. Used only for the map and tagging.</li>
+                <li><strong>Analytics:</strong> anonymized, used to improve the app. You can opt out.</li>
+              </ul>
+
+              <h2 id="collect">1. Information we collect</h2>
+              <h3>1.1 Information you give us</h3>
+              <ul>
+                <li>Account details: email, handle, display name, profile photo.</li>
+                <li>Content: smacks (photo + score + tasting note), comments, lists, follows.</li>
+                <li>Communications: messages you send to support@.</li>
+              </ul>
+
+              <h3>1.2 Information collected automatically</h3>
+              <ul>
+                <li>Device data: model, OS version, app version, language, time zone.</li>
+                <li>Usage data: screens visited, features used, crash reports (via FCM &amp; in‑house telemetry).</li>
+                <li>Approximate location (city‑level), if you grant permission, for the map.</li>
+              </ul>
+
+              <h2 id="use">2. How we use your information</h2>
+              <p>We use your data to:</p>
+              <ul>
+                <li>Run the app — show you your feed, your map, your friends, your XP.</li>
+                <li>Score dishes (the AI model needs the photo to do its job).</li>
+                <li>Send notifications you opted into.</li>
+                <li>Improve product quality and AI accuracy (using aggregated, de‑identified data).</li>
+                <li>Detect abuse and enforce our Community Guidelines.</li>
+              </ul>
+              <p>We <strong>do not</strong> sell your personal data, ever.</p>
+
+              <h2 id="share">3. Third‑party services</h2>
+              <p>We share data with a small set of vetted vendors who are contractually bound to our standards:</p>
+              <table className="legal-table">
+                <thead><tr><th>Vendor</th><th>Purpose</th><th>Data shared</th></tr></thead>
+                <tbody>
+                  <tr><td>Supabase</td><td>Database &amp; auth</td><td>Account, content, sessions</td></tr>
+                  <tr><td>Google Gemini</td><td>AI model layer</td><td>Photo (only on post), prompt</td></tr>
+                  <tr><td>Firebase Cloud Messaging (FCM)</td><td>Push notifications</td><td>Device token, notification payload</td></tr>
+                  <tr><td>Mixpanel</td><td>Anonymized analytics</td><td>Event data, hashed user ID</td></tr>
+                  <tr><td>Cloudflare</td><td>Network &amp; storage edge</td><td>IP, request metadata</td></tr>
+                </tbody>
+              </table>
+
+              <h2 id="ai">4. AI disclosure</h2>
+              <p>SmackCheck uses machine‑learning models — primarily on‑device inference plus a server‑side flavor model — to recognize dishes and produce a smack score. <strong>Important:</strong></p>
+              <ul>
+                <li>Scores are estimates. They are not a substitute for human taste.</li>
+                <li>The model has known weaknesses on niche regional cuisines; we publish accuracy stats per cuisine in‑app.</li>
+                <li>You can override any AI output. Overrides are private unless you publish them.</li>
+                <li>We do not use your photos to train third‑party foundation models without your explicit opt‑in.</li>
+              </ul>
+
+              <h2 id="retention">5. Retention</h2>
+              <p>We retain your account data while your account is active. When you delete your account, content is removed from production within 30 days; backup snapshots roll off within 90 days. Photo binaries are deleted permanently.</p>
+
+              <h2 id="rights">6. Your rights</h2>
+              <p>Under GDPR (EU) and CCPA (California), you have the right to access, correct, export, delete, and restrict processing of your personal data. To exercise any right:</p>
+              <ul>
+                <li>In‑app: <code>Settings → Privacy</code> includes self‑serve export &amp; delete.</li>
+                <li>By email: <a href="mailto:privacy@smackcheck.app">privacy@smackcheck.app</a> — we respond within 14 days.</li>
+              </ul>
+              <p>You can also lodge a complaint with your local supervisory authority.</p>
+
+              <h2 id="minors">7. Minors</h2>
+              <p>SmackCheck is for users 13 and older. We don't knowingly collect data from children under 13. If you believe we have, please contact <a href="mailto:privacy@smackcheck.app">privacy@smackcheck.app</a>.</p>
+
+              <h2 id="changes">8. Changes to this policy</h2>
+              <p>If we materially change this policy, we'll notify you in‑app at least 30 days before the change takes effect. Material changes require renewed acceptance.</p>
+
+              <h2 id="contact">9. Contact</h2>
+              <p>SmackCheck Labs, Inc.<br/>68 Jay Street, Brooklyn, NY 11201<br/>USA</p>
+              <p>Privacy questions: <a href="mailto:privacy@smackcheck.app">privacy@smackcheck.app</a><br/>EU representative: <a href="mailto:eu@smackcheck.app">eu@smackcheck.app</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

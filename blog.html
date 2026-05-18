@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog — SmackCheck</title>
+<meta name="description" content="Food guides, restaurant spotlights, community stories and product updates from the SmackCheck team." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .filter-bar { display: flex; gap: 8px; padding: 20px 0 40px; flex-wrap: wrap; }
+  .filter-bar .chip { padding: 8px 14px; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+  .filter-bar .chip.active { background: rgba(100,34,35,.10); border-color: var(--border-brand); color: #f4cfd4; }
+
+  .blog-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  @media (max-width: 980px) { .blog-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 680px) { .blog-grid { grid-template-columns: 1fr; } }
+
+  .blog-card {
+    border-radius: var(--r-lg); overflow: hidden;
+    background: var(--surface); border: 1px solid var(--border);
+    transition: border-color .2s ease, transform .2s ease;
+    display: flex; flex-direction: column;
+  }
+  .blog-card:hover { border-color: var(--border-strong); transform: translateY(-3px); }
+  .blog-thumb { aspect-ratio: 16/10; position: relative; overflow: hidden; }
+  .blog-thumb.t1 { background: radial-gradient(circle at 30% 35%, rgba(255,210,150,.55), transparent 40%), radial-gradient(circle at 70% 65%, rgba(140,40,30,.55), transparent 45%), linear-gradient(135deg, #2a1610, #b3613a); }
+  .blog-thumb.t2 { background: radial-gradient(circle at 50% 50%, rgba(220,180,90,.45), transparent 40%), linear-gradient(135deg, #1a2a14, #6a8a4a); }
+  .blog-thumb.t3 { background: radial-gradient(circle at 50% 55%, rgba(255,200,200,.4), transparent 50%), linear-gradient(135deg, #2a1a3a, #8a5aaa); }
+  .blog-thumb.t4 { background: radial-gradient(circle at 35% 45%, rgba(255,230,180,.45), transparent 40%), linear-gradient(135deg, #3a2a14, #aa8a5a); }
+  .blog-thumb.t5 { background: radial-gradient(circle at 50% 50%, rgba(160,210,200,.4), transparent 45%), linear-gradient(135deg, #14302a, #2a5a4e); }
+  .blog-thumb.t6 { background: linear-gradient(135deg, rgba(100,34,35,.18), rgba(100,34,35,.18)), radial-gradient(circle at 50% 50%, rgba(255,200,150,.3), transparent 50%), #1a0e10; }
+  .blog-thumb.t7 { background: radial-gradient(circle at 40% 45%, rgba(220,150,80,.5), transparent 45%), linear-gradient(135deg, #3a1a14, #8a5a3a); }
+  .blog-thumb.t8 { background: radial-gradient(circle at 30% 60%, rgba(120,160,90,.45), transparent 45%), linear-gradient(135deg, #2a3a14, #5a6a3a); }
+  .blog-thumb .pill { position: absolute; top: 14px; left: 14px; padding: 4px 10px; border-radius: 999px; background: var(--bg-soft); backdrop-filter: blur(10px); font-size: 10px; font-weight: 700; color: #fff; letter-spacing: .08em; text-transform: uppercase; border: 0.5px solid rgba(255,255,255,.15); }
+
+  .blog-body { padding: 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .blog-meta { display: flex; gap: 10px; font-size: 11px; color: var(--text-mute); font-family: var(--font-mono); }
+  .blog-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-mute); align-self: center; }
+  .blog-card h3 { font-size: 18px; line-height: 1.25; }
+  .blog-card p { font-size: 13px; color: var(--text-dim); line-height: 1.55; }
+  .blog-author { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 12px; }
+  .blog-author .av { width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, #BB5B5C, #642223); }
+  .blog-author .name { font-size: 12px; font-weight: 600; }
+
+  .feat-post {
+    display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px;
+    border-radius: var(--r-xl); overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border); margin-bottom: 60px;
+  }
+  .feat-post .thumb { aspect-ratio: auto; min-height: 360px; }
+  .feat-post .body { padding: 40px; display: flex; flex-direction: column; gap: 16px; justify-content: center; }
+  .feat-post h2 { font-size: clamp(28px, 3vw, 38px); line-height: 1.1; letter-spacing: -.025em; }
+  .feat-post p { color: var(--text-dim); font-size: 15px; line-height: 1.6; max-width: 480px; }
+  @media (max-width: 880px) { .feat-post { grid-template-columns: 1fr; } .feat-post .thumb { min-height: 240px; } .feat-post .body { padding: 28px; } }
+</style>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-hero">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">Blog</span>
+    <h1 class="h-display">The <span class="accent">smack</span> journal.</h1>
+    <p class="lede" style="margin:26px auto 0;">Food guides, restaurant spotlights, community stories and what we're shipping. Updated every Thursday.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="feat-post">
+      <div class="blog-thumb t1 thumb">
+        <span class="pill">Featured · Guide</span>
+      </div>
+      <div class="body">
+        <div class="blog-meta">
+          <span>City Guide</span><span class="dot"></span><span>14 min read</span><span class="dot"></span><span>May 12, 2026</span>
+        </div>
+        <h2>The 15 best birria tacos in NYC, scored.</h2>
+        <p>We ate at 47 birrierias from the Bronx to Bay Ridge over three weeks. The Smack Score didn't lie — but the top three weren't where we expected. A field guide for the consommé‑obsessed.</p>
+        <div class="blog-author">
+          <div class="av"></div>
+          <span class="name">Maya Chen · Co‑founder</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <span class="chip active">All</span>
+      <span class="chip">Food guides</span>
+      <span class="chip">Restaurant spotlights</span>
+      <span class="chip">Community stories</span>
+      <span class="chip">Product updates</span>
+      <span class="chip">Behind the AI</span>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <div class="blog-thumb t2"><span class="pill">Restaurant spotlight</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Spotlight</span><span class="dot"></span><span>6 min</span></div>
+          <h3>Komeya's 24‑hour broth is changing what NYC thinks about ramen.</h3>
+          <p>Chef Akari Sato spends 24 hours on a single batch. We spent a week figuring out why.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#6FCFB1,#2a5a4e);"></div><span class="name">Marcus Toledo</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t3"><span class="pill">Community</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Community</span><span class="dot"></span><span>4 min</span></div>
+          <h3>Meet the 100 foodies who've smacked the most dishes in 2026.</h3>
+          <p>From a 78‑year‑old retired chef in Queens to a 19‑year‑old college freshman in Berkeley.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#E0A95C,#8a5a1d);"></div><span class="name">Aria Solano</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t4"><span class="pill">Behind the AI</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Engineering</span><span class="dot"></span><span>12 min</span></div>
+          <h3>How we got the smack model under 800ms on a Pixel 6.</h3>
+          <p>A deep technical post about quantization, mobile inference, and one really aggressive cache.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#6BA8E0,#28456e);"></div><span class="name">Jay Kim</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t5"><span class="pill">Food guide</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Guide</span><span class="dot"></span><span>9 min</span></div>
+          <h3>A scientific ranking of every olive oil gelato in Manhattan.</h3>
+          <p>Three of us. Forty‑eight scoops. One serious data set. Includes the controversial 9.4.</p>
+          <div class="blog-author"><div class="av"></div><span class="name">Maya Chen</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t6"><span class="pill">Product</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Update</span><span class="dot"></span><span>3 min</span></div>
+          <h3>What's new in v0.9.2 — Map heatmaps &amp; group trip planning.</h3>
+          <p>Faster map, smarter filters, and you can now plan a whole eating trip with three friends.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#6FCFB1,#2a5a4e);"></div><span class="name">Marcus Toledo</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t7"><span class="pill">Restaurant spotlight</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Spotlight</span><span class="dot"></span><span>7 min</span></div>
+          <h3>The neighborhood spot in Bushwick that quietly scored a 9.4.</h3>
+          <p>Birrieria Catarina has been open for eight months. Most New Yorkers haven't heard of them yet.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#E0A95C,#8a5a1d);"></div><span class="name">Aria Solano</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t8"><span class="pill">Food guide</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Guide</span><span class="dot"></span><span>11 min</span></div>
+          <h3>Eating in Lisbon: a 4‑day itinerary built entirely from smack scores.</h3>
+          <p>The SmackCheck map plus 4 days of jet lag. Includes the 9.6 paella nobody saw coming.</p>
+          <div class="blog-author"><div class="av"></div><span class="name">Maya Chen</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t1"><span class="pill">Community</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Community</span><span class="dot"></span><span>5 min</span></div>
+          <h3>Why we made it impossible for restaurants to pay for ranking.</h3>
+          <p>The architectural decision that means SmackCheck will never be Yelp.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#6BA8E0,#28456e);"></div><span class="name">Jay Kim</span></div>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <div class="blog-thumb t2"><span class="pill">Behind the AI</span></div>
+        <div class="blog-body">
+          <div class="blog-meta"><span>Engineering</span><span class="dot"></span><span>8 min</span></div>
+          <h3>What we got wrong about regional Mexican food (and how we fixed it).</h3>
+          <p>Why the model was scoring Oaxacan dishes 0.4 too low — and how we built the fix.</p>
+          <div class="blog-author"><div class="av" style="background:linear-gradient(135deg,#6FCFB1,#2a5a4e);"></div><span class="name">Marcus Toledo</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center;padding: 60px 0 100px;">
+      <a href="#" class="btn btn-ghost">Load more posts</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="partials.js"></script>
+<script>scMount('Blog');</script>
+</body>
+</html>
