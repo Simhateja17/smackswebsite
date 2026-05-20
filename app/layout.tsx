@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./styles.css";
 import "./phone-screens.css";
 import "./legal.css";
-import "./pages.css";
+import "./all-pages.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 

@@ -27,7 +27,7 @@ export default function About() {
               <p>So we started a Notion doc  every dish, scored 0 to 10, with a tasting note. Within a year it had grown to 4,800 entries across three cities. People kept asking for access. We started saying yes.</p>
               <p>SmackCheck is what that doc became when we let an AI help.</p>
             </div>
-            <div className="story-img"><div className="stamp">SmackCheck HQ · Brooklyn · 2025</div></div>
+            <div className="story-img" style={{ position: "relative", overflow: "hidden" }}><img src="/images/about-story.png" alt="SmackCheck HQ" style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", inset: 0 }} /><div className="stamp" style={{ position: "relative", zIndex: 1 }}>SmackCheck HQ · Brooklyn · 2025</div></div>
           </div>
 
           <div className="story-grid r">
@@ -37,7 +37,7 @@ export default function About() {
               <p>We think great food is the easiest thing in the world to find  and the hardest thing to remember. The dish you couldn't stop thinking about last August? Gone. The bar your friend swore by? Forgotten.</p>
               <p>Our job is to make taste portable. A score, a tasting note, a pin on a map  so the best meal of last year is the first answer to &quot;where should we eat tonight?&quot;</p>
             </div>
-            <div className="story-img" style={{ background: "linear-gradient(135deg,rgba(224,169,92,.25),rgba(100,80,30,.15))" }}><div className="stamp">Field notes · 4,812 dishes · 3 cities</div></div>
+            <div className="story-img" style={{ position: "relative", overflow: "hidden" }}><img src="/images/about-taste-graph.png" alt="Field notes" style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", inset: 0 }} /><div className="stamp" style={{ position: "relative", zIndex: 1 }}>Field notes · 4,812 dishes · 3 cities</div></div>
           </div>
         </div>
       </section>
@@ -101,10 +101,10 @@ export default function About() {
             <h2 className="h-1">Twelve people. One opinion.</h2>
           </div>
           <div className="team-grid">
-            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#BB5B5C,#642223)" }}></div><h4>Maya Chen</h4><div className="role">Co‑founder · CEO</div><p>Ex‑Eater. Has eaten in 64 countries. Birria evangelist.</p></div>
-            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#6FCFB1,#2a5a4e)" }}></div><h4>Marcus Toledo</h4><div className="role">Co‑founder · CTO</div><p>Built the AI pipeline. Believes ramen is a love language.</p></div>
-            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#E0A95C,#8a5a1d)" }}></div><h4>Aria Solano</h4><div className="role">Head of Design</div><p>Sets the bar. Owns the smack score curve.</p></div>
-            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#6BA8E0,#28456e)" }}></div><h4>Jay Kim</h4><div className="role">Head of Community</div><p>Curates the city editors. Knows every chef in LES.</p></div>
+            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#BB5B5C,#642223)" }}></div><h4>Samuel Burth</h4><div className="role">Founder · CEO</div><p>Ex‑Eater. Has eaten in 64 countries. Birria evangelist.</p></div>
+            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#6FCFB1,#2a5a4e)" }}></div><h4>Simhateja</h4><div className="role">CTO</div><p>Built the AI pipeline. Believes ramen is a love language.</p></div>
+            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#E0A95C,#8a5a1d)" }}></div><h4>Poojitha</h4><div className="role">Head of Design</div><p>Sets the bar. Owns the smack score curve.</p></div>
+            <div className="team-card"><div className="team-av" style={{ background: "linear-gradient(135deg,#6BA8E0,#28456e)" }}></div><h4>Manasa</h4><div className="role">Head of Development</div><p>Leads the engineering roadmap. Ships fast and breaks nothing.</p></div>
           </div>
         </div>
       </section>

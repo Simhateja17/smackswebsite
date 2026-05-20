@@ -43,7 +43,7 @@ export default function HowItWorks() {
               <li>• Works on plate, bowl, paper bag, food truck wrapper</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><CaptureScreen /></Phone></div>
+          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", display: "flex" }}><img src="/images/capture-screen.png" alt="Capture screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /></div></Phone></div>
         </div>
 
         <div className="hiw-detail r">
@@ -59,7 +59,7 @@ export default function HowItWorks() {
               <div className="timing-card"><div className="v">96.1%</div><div className="l">Dish accuracy</div></div>
             </div>
           </div>
-          <div className="phone-wrap"><Phone><CaptureScreen /></Phone></div>
+          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", position: "relative" }}><img src="/images/ai-analysis-screen.png" alt="AI analysis screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /><div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "28px", background: "#fff" }} /></div></Phone></div>
         </div>
 
         <div className="hiw-detail">
@@ -74,7 +74,7 @@ export default function HowItWorks() {
               <li>• Tag who you were with, what you drank, what you wore</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><FeedScreen /></Phone></div>
+          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", position: "relative" }}><img src="/images/rate-screen.png" alt="Rate screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /><div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "28px", background: "#fff" }} /></div></Phone></div>
         </div>
 
         <div className="hiw-detail r">
@@ -89,7 +89,7 @@ export default function HowItWorks() {
               <li>• Cross‑post to Instagram with a watermarked card</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><FeedScreen /></Phone></div>
+          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", position: "relative" }}><img src="/images/share-screen.png" alt="Share screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /><div style={{ position: "absolute", top: 0, left: 0, right: 0, height: "28px", background: "#fff" }} /></div></Phone></div>
         </div>
 
         <div className="hiw-detail">

@@ -53,45 +53,9 @@ const AppBar = () => (
 );
 
 export const FeedScreen = () => (
-  <>
-    <StatusBar />
-    <AppBar />
-    <div className="greeting">
-      <div className="hi">Good morning, Alex 👋</div>
-      <div className="ask">Find your <span className="em">next meal</span>.</div>
-    </div>
-    <div className="search-bar">{Icon.search}<span className="ph">Search dishes, restaurants…</span></div>
-    <div className="chips-row">
-      <div className="app-chip active">All</div>
-      <div className="app-chip">Near me</div>
-      <div className="app-chip">Trending</div>
-      <div className="app-chip">$$$</div>
-    </div>
-    <div className="app-sec-head"><span className="t">Following</span></div>
-    <div className="stories">
-      <div className="story"><div className="story-avatar"><div className="inner" style={{ background: "linear-gradient(135deg,#d4a4a5,#642223)" }}></div></div><div className="story-name">maya</div></div>
-      <div className="story"><div className="story-avatar"><div className="inner" style={{ background: "linear-gradient(135deg,#d4a872,#8a5a1d)" }}></div></div><div className="story-name">marcus</div></div>
-      <div className="story"><div className="story-avatar"><div className="inner" style={{ background: "linear-gradient(135deg,#c89890,#6a4040)" }}></div></div><div className="story-name">aria</div></div>
-      <div className="story"><div className="story-avatar"><div className="inner" style={{ background: "linear-gradient(135deg,#b8aab0,#5a4045)" }}></div></div><div className="story-name">jay</div></div>
-      <div className="story"><div className="story-avatar add"><div className="inner">+</div></div><div className="story-name">Add</div></div>
-    </div>
-    <div className="app-sec-head"><span className="t">Top dishes today</span><span className="a">See all</span></div>
-    <div className="dish-row">
-      <div className="dish-card">
-        <div className="dish-img a"><div className="score-pill"><span className="star">★</span>9.4</div></div>
-        <div className="dish-info"><div className="name">Truffle Tagliatelle</div><div className="meta">Cucina Marco · Italian</div></div>
-      </div>
-      <div className="dish-card">
-        <div className="dish-img b"><div className="score-pill"><span className="star">★</span>9.1</div></div>
-        <div className="dish-info"><div className="name">Hokkaido Scallops</div><div className="meta">Nami Sushi · Japanese</div></div>
-      </div>
-    </div>
-    <div className="promo-card">
-      <div className="num">8</div>
-      <div className="lbl">restaurants<br/>near you</div>
-      <div className="cta">Explore</div>
-    </div>
-  </>
+  <div style={{ flex: 1, overflow: "hidden", display: "flex" }}>
+    <img src="/images/feed-screen.png" alt="Feed screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+  </div>
 );
 
 export const CaptureScreen = () => (
@@ -139,109 +103,21 @@ export const CaptureScreen = () => (
 );
 
 export const LeaderboardScreen = () => (
-  <>
-    <StatusBar />
-    <AppBar />
-    <div className="greeting" style={{ paddingBottom: 8 }}>
-      <div className="ask">Top <span className="em">tasters</span> this week</div>
-    </div>
-    <div className="lb-tabs-row">
-      <div className="app-chip">Global</div>
-      <div className="app-chip active">Friends</div>
-      <div className="app-chip">City</div>
-    </div>
-    <div className="podium">
-      <div className="podium-spot">
-        <div className="podium-avatar s"><div className="inner"></div></div>
-        <div className="podium-name">marcus</div>
-        <div className="podium-xp">42.1k XP</div>
-        <div className="podium-rank" style={{ color: "#A8A29E" }}>2</div>
-      </div>
-      <div className="podium-spot" style={{ marginBottom: 8 }}>
-        <div className="podium-avatar"><div className="podium-crown">{Icon.crown}</div><div className="inner"></div></div>
-        <div className="podium-name">maya</div>
-        <div className="podium-xp">48.6k XP</div>
-        <div className="podium-rank">1</div>
-      </div>
-      <div className="podium-spot">
-        <div className="podium-avatar b"><div className="inner"></div></div>
-        <div className="podium-name">jay.k</div>
-        <div className="podium-xp">39.0k XP</div>
-        <div className="podium-rank" style={{ color: "#BB5B5C" }}>3</div>
-      </div>
-    </div>
-    <div className="lb-list">
-      <div className="lb-row"><div className="lb-rank">4</div><div className="lb-avatar"></div><div className="lb-info"><div className="lb-name">aria_eats</div><div className="lb-sub">12 smacks this week</div></div><div className="lb-xp">36.4k</div></div>
-      <div className="lb-row me"><div className="lb-rank">5</div><div className="lb-avatar" style={{ background: "linear-gradient(135deg,#d4a4a5,#3d1418)" }}></div><div className="lb-info"><div className="lb-name">you</div><div className="lb-sub">+2 from last week ↑</div></div><div className="lb-xp">34.2k</div></div>
-      <div className="lb-row"><div className="lb-rank">6</div><div className="lb-avatar" style={{ background: "linear-gradient(135deg,#c89890,#6a4040)" }}></div><div className="lb-info"><div className="lb-name">sofia.r</div><div className="lb-sub">9 smacks this week</div></div><div className="lb-xp">31.8k</div></div>
-      <div className="lb-row"><div className="lb-rank">7</div><div className="lb-avatar" style={{ background: "linear-gradient(135deg,#b8aab0,#5a4045)" }}></div><div className="lb-info"><div className="lb-name">danny.t</div><div className="lb-sub">7 smacks this week</div></div><div className="lb-xp">28.9k</div></div>
-    </div>
-  </>
+  <div style={{ flex: 1, overflow: "hidden", display: "flex" }}>
+    <img src="/images/achievements-screen.png" alt="Achievements screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+  </div>
 );
 
 export const MapScreen = () => (
-  <>
-    <StatusBar />
-    <div className="map-screen">
-      <div className="map-bg"></div>
-      <div className="map-grid"></div>
-      <div className="map-road" style={{ left: 0, right: 0, top: "55%", height: 6 }}></div>
-      <div className="map-road" style={{ top: 0, bottom: 0, left: "40%", width: 5 }}></div>
-      <div className="map-road" style={{ top: "30%", bottom: 0, left: "72%", width: 4, transform: "rotate(8deg)", transformOrigin: "top left" }}></div>
-      <div className="map-search">{Icon.search}<span className="ph">Truffle pasta near me…</span></div>
-      <div className="map-pin" style={{ left: "26%", top: "42%" }}><div className="map-pin-dot"></div><div className="map-pin-score">9.2</div></div>
-      <div className="map-pin" style={{ left: "55%", top: "35%" }}><div className="map-pin-dot"></div><div className="map-pin-score">8.7</div></div>
-      <div className="map-pin" style={{ left: "42%", top: "62%" }}><div className="map-pin-dot" style={{ background: "#C68A3E", boxShadow: "0 8px 18px -4px rgba(198,138,62,.5),0 0 0 2px rgba(255,255,255,.85)" }}></div><div className="map-pin-score">9.4</div></div>
-      <div className="map-pin" style={{ left: "78%", top: "55%" }}><div className="map-pin-dot"></div><div className="map-pin-score">8.1</div></div>
-      <div className="map-pin" style={{ left: "18%", top: "72%" }}><div className="map-pin-dot"></div><div className="map-pin-score">7.9</div></div>
-      <div className="map-card-pop">
-        <div className="map-card-img"></div>
-        <div className="map-card-info">
-          <div className="map-card-name">Birrieria Catarina</div>
-          <div className="map-card-cui">Mexican · 0.4 mi · 124 smacks</div>
-        </div>
-        <div className="map-card-score">9.4</div>
-      </div>
-    </div>
-  </>
+  <div style={{ flex: 1, overflow: "hidden", display: "flex" }}>
+    <img src="/images/map-screen.png" alt="Map screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+  </div>
 );
 
 export const ProfileScreen = () => (
-  <>
-    <StatusBar />
-    <div className="appbar">
-      <div className="appbar-brand"><span className="appbar-brand-mark"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2c2.2 3.6 6 5.5 6 10.2 0 3.4-2.7 6.1-6 6.1s-6-2.7-6-6.1c0-2.6 1.4-3.7 2.4-5.6.3 1.5 1.1 2.4 2 2.4 0-2 .8-3.8 1.6-7zM7 21h10v1.2H7z"/></svg></span><span className="appbar-brand-name">Profile</span></div>
-      <div className="appbar-actions"><div className="appbar-icon">{Icon.share}</div><div className="appbar-icon">{Icon.settings}</div></div>
-    </div>
-    <div className="profile-hero">
-      <div className="profile-avatar"><div className="inner"></div></div>
-      <div>
-        <div className="profile-name">Alex Chen</div>
-        <div className="profile-handle">@alex.eats · NYC</div>
-      </div>
-      <div className="profile-bio">Hunting the best birria in the five boroughs. 🌮</div>
-    </div>
-    <div className="profile-stats">
-      <div className="pstat"><div className="v">312</div><div className="l">SMACKS</div></div>
-      <div className="pstat"><div className="v">14.2k</div><div className="l">FOLLOWERS</div></div>
-      <div className="pstat"><div className="v">28</div><div className="l">DAY STREAK</div></div>
-    </div>
-    <div className="xp-block">
-      <div className="xp-row"><span className="xp-level">Level 18 · Connoisseur</span><span className="xp-next">34,200 / 40,000 XP</span></div>
-      <div className="xp-bar"><div className="xp-fill"></div></div>
-    </div>
-    <div className="app-sec-head" style={{ paddingTop: 0 }}><span className="t">Badges</span><span className="a">17 of 64</span></div>
-    <div className="badge-grid">
-      <div className="badge brand">{Icon.flame}</div>
-      <div className="badge gold">{Icon.crown}</div>
-      <div className="badge gold">{Icon.medal}</div>
-      <div className="badge brand">{Icon.streak}</div>
-      <div className="badge">{Icon.chef}</div>
-      <div className="badge">{Icon.target}</div>
-      <div className="badge locked">{Icon.star}</div>
-      <div className="badge locked">{Icon.trophy}</div>
-    </div>
-  </>
+  <div style={{ flex: 1, overflow: "hidden", display: "flex" }}>
+    <img src="/images/profile-screen.png" alt="Profile screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} />
+  </div>
 );
 
 export default function Phone({ children, size, style }: { children: React.ReactNode; size?: "lg" | "sm"; style?: React.CSSProperties }) {

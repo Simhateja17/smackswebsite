@@ -31,7 +31,7 @@ export default function Features() {
               <li>Override the AI  your taste is the source of truth</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><CaptureScreen /></Phone></div>
+          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", display: "flex" }}><img src="/images/capture-screen.png" alt="Capture screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /></div></Phone></div>
         </div>
 
         <div className="deep-feat reverse" data-screen-label="03 Feed">

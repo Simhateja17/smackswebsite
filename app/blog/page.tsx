@@ -19,8 +19,9 @@ export default function Blog() {
       <section>
         <div className="wrap">
           <div className="feat-post">
-            <div className="blog-thumb t1 thumb">
-              <span className="pill">Featured · Guide</span>
+            <div className="thumb" style={{ position: "relative", overflow: "hidden", borderRadius: "inherit" }}>
+              <img src="/images/birria-tacos.png" alt="Birria tacos" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <span className="pill" style={{ position: "absolute", top: 14, left: 14 }}>Featured · Guide</span>
             </div>
             <div className="body">
               <div className="blog-meta">
@@ -46,7 +47,10 @@ export default function Blog() {
 
           <div className="blog-grid">
             <article className="blog-card">
-              <div className="blog-thumb t2"><span className="pill">Restaurant spotlight</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/blog-ramen.png" alt="Ramen bowl at Komeya" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Restaurant spotlight</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Spotlight</span><span className="dot"></span><span>6 min</span></div>
                 <h3>Komeya's 24‑hour broth is changing what NYC thinks about ramen.</h3>
@@ -56,7 +60,10 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t3"><span className="pill">Community</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/blog-community.png" alt="Table spread with various dishes" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Community</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Community</span><span className="dot"></span><span>4 min</span></div>
                 <h3>Meet the 100 foodies who've smacked the most dishes in 2026.</h3>
@@ -66,7 +73,10 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t4"><span className="pill">Behind the AI</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/blog-phone.png" alt="iPhone camera closeup" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Behind the AI</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Engineering</span><span className="dot"></span><span>12 min</span></div>
                 <h3>How we got the smack model under 800ms on a Pixel 6.</h3>
@@ -76,7 +86,10 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t5"><span className="pill">Food guide</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/gelato.png" alt="Green olive oil gelato" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Food guide</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Guide</span><span className="dot"></span><span>9 min</span></div>
                 <h3>A scientific ranking of every olive oil gelato in Manhattan.</h3>
@@ -86,7 +99,10 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t6"><span className="pill">Product</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/map-heatmap.png" alt="NYC map heatmap" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Product</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Update</span><span className="dot"></span><span>3 min</span></div>
                 <h3>What's new in v0.9.2  Map heatmaps &amp; group trip planning.</h3>
@@ -96,7 +112,10 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t7"><span className="pill">Restaurant spotlight</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}>
+                <img src="/images/bushwick-spot.png" alt="Outdoor restaurant patio in Bushwick" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <span className="pill">Restaurant spotlight</span>
+              </div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Spotlight</span><span className="dot"></span><span>7 min</span></div>
                 <h3>The neighborhood spot in Bushwick that quietly scored a 9.4.</h3>
@@ -106,7 +125,7 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t8"><span className="pill">Food guide</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}><img src="/images/lisbon.png" alt="Eating in Lisbon" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span className="pill">Food guide</span></div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Guide</span><span className="dot"></span><span>11 min</span></div>
                 <h3>Eating in Lisbon: a 4‑day itinerary built entirely from smack scores.</h3>
@@ -116,7 +135,7 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t1"><span className="pill">Community</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}><img src="/images/no-pay-ranking.png" alt="No pay for ranking" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span className="pill">Community</span></div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Community</span><span className="dot"></span><span>5 min</span></div>
                 <h3>Why we made it impossible for restaurants to pay for ranking.</h3>
@@ -126,7 +145,7 @@ export default function Blog() {
             </article>
 
             <article className="blog-card">
-              <div className="blog-thumb t2"><span className="pill">Behind the AI</span></div>
+              <div className="blog-thumb" style={{ position: "relative", overflow: "hidden" }}><img src="/images/mexican-food.png" alt="Regional Mexican food" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span className="pill">Behind the AI</span></div>
               <div className="blog-body">
                 <div className="blog-meta"><span>Engineering</span><span className="dot"></span><span>8 min</span></div>
                 <h3>What we got wrong about regional Mexican food (and how we fixed it).</h3>

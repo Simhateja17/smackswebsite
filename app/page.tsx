@@ -124,9 +124,6 @@ export default function Home() {
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7z"/></svg></span>AI Dish Analysis</div>
               <h3>The smack score, calculated.</h3>
               <p>Snap a plate. Our model scores plating, craft, value and authenticity in under a second  then tags the dish, cuisine and likely ingredients.</p>
-              <div style={{ position: "absolute", bottom: -20, left: "50%", transform: "translateX(-50%)" }}>
-                <Phone size="sm"><CaptureScreen /></Phone>
-              </div>
             </div>
             <div className="feat-card">
               <div className="feat-icon-pill"><span className="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 12a8 8 0 0 1-12 7l-5 1 1-5a8 8 0 1 1 16-3z"/></svg></span>Social Feed</div>
@@ -201,51 +198,46 @@ export default function Home() {
           </div>
           <div className="trending-grid">
             <div className="trend-card big">
-              <div className="img a"></div>
+              <img src="/images/birria-tacos.png" alt="Crispy Birria Tacos" className="img a" style={{ objectFit: "cover", width: "100%", height: "100%", position: "absolute", inset: 0 }} />
               <div className="overlay"></div>
               <div className="score">9.4</div>
               <div className="info">
-                <span className="badge">🔥 #1 in Brooklyn</span>
                 <h4>Crispy Birria Tacos w/ consommé</h4>
                 <div className="meta">Birrieria Catarina · 312 smacks this week</div>
               </div>
             </div>
             <div className="trend-card">
-              <div className="img b"></div>
+              <img src="/images/trending-ramen.png" alt="House ramen" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
               <div className="overlay"></div>
               <div className="score">9.1</div>
               <div className="info">
-                <span className="badge">🍜 Tonkotsu</span>
                 <h4>House ramen, 24h broth</h4>
                 <div className="meta">Komeya · LES</div>
               </div>
             </div>
             <div className="trend-card">
-              <div className="img c"></div>
+              <img src="/images/trending-biryani.png" alt="Chicken Biryani" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
               <div className="overlay"></div>
               <div className="score">9.0</div>
               <div className="info">
-                <span className="badge">🍷 Wine bar</span>
-                <h4>Beet tartare, smoked ricotta</h4>
+                <h4>Chicken Biryani</h4>
                 <div className="meta">Mira · West Village</div>
               </div>
             </div>
             <div className="trend-card">
-              <div className="img d"></div>
+              <img src="/images/trending-dumplings.png" alt="Soup dumplings" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
               <div className="overlay"></div>
               <div className="score">8.9</div>
               <div className="info">
-                <span className="badge">🥟 Dim Sum</span>
                 <h4>Soup dumplings, pork & crab</h4>
                 <div className="meta">Joe&apos;s Shanghai · Flushing</div>
               </div>
             </div>
             <div className="trend-card">
-              <div className="img e"></div>
+              <img src="/images/trending-gelato.png" alt="Olive oil & sea salt gelato" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
               <div className="overlay"></div>
               <div className="score">8.7</div>
               <div className="info">
-                <span className="badge">🍦 Dessert</span>
                 <h4>Olive oil & sea salt gelato</h4>
                 <div className="meta">Soft Swerve · LES</div>
               </div>
