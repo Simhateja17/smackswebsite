@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Phone, { FeedScreen, CaptureScreen } from "./components/Phone";
+import Phone, { CaptureScreen } from "./components/Phone";
 
 export default function Home() {
   return (
@@ -55,8 +55,7 @@ export default function Home() {
                   <div className="hfc-value">Connoisseur unlocked</div>
                 </div>
               </div>
-              <div className="hero-phone-1"><Phone><FeedScreen /></Phone></div>
-              <div className="hero-phone-2"><Phone><CaptureScreen /></Phone></div>
+              <img src="/hero_view_chatgpt.png" alt="SmackCheck app" className="hero-image" />
             </div>
           </div>
         </div>
