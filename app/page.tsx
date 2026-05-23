@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Phone, { FeedScreen, CaptureScreen, MapScreen, LeaderboardScreen, ProfileScreen } from "./components/Phone";
+import Phone, { FeedScreen, CaptureScreen } from "./components/Phone";
 
 export default function Home() {
   return (
@@ -18,11 +18,11 @@ export default function Home() {
               <p className="lede hero-sub">SmackCheck is the social food app that scores what you eat with AI  so you stop second‑guessing menus and start finding the best plate in every city.</p>
               <div className="hero-cta">
                 <Link href="/download" className="btn btn-primary" style={{ background: "var(--rose)" }}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.6 2.1-3.8 2.2-3.9-1.2-1.7-3-2-3.7-2-1.6-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.5 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.2 3.1-2.5.7-1 1.3-2.4 1.3-2.4-1-.4-3-1.4-3-3.5z"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                   Download for iOS
                 </Link>
                 <Link href="/download" className="btn btn-ghost">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 2v20l9-10z"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
                   Get on Play Store
                 </Link>
               </div>
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* SCREENSHOT RAIL */}
-      <section data-screen-label="02 Screens" style={{ padding: "80px 0 30px" }}>
+      <section data-screen-label="02 Screens" style={{ padding: "80px 0 30px", background: "var(--bg)" }}>
         <div className="wrap">
           <div className="sec-head">
             <span className="eyebrow">A look inside</span>
@@ -86,29 +86,18 @@ export default function Home() {
             <p className="lede">Five screens. One unfair advantage over every menu, every dinner, every group chat about where to go.</p>
           </div>
         </div>
-        <div className="rail">
-          <div className="rail-track">
-            <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>01  FEED</div>
-              <Phone><FeedScreen /></Phone>
+        <div className="phone-rail">
+          {[
+            { src: "/images/phone-1-feed.png",        alt: "01 Feed" },
+            { src: "/images/phone-2-capture.png",     alt: "02 Capture & AI" },
+            { src: "/images/phone-3-map.png",         alt: "03 Map" },
+            { src: "/images/phone-4-leaderboard.png", alt: "04 Leaderboard" },
+            { src: "/images/phone-5-profile.png",     alt: "05 Profile" },
+          ].map(({ src, alt }) => (
+            <div key={alt} className="phone-rail-card">
+              <img src={src} alt={alt} className="phone-rail-img" />
             </div>
-            <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>02  CAPTURE & AI</div>
-              <Phone><CaptureScreen /></Phone>
-            </div>
-            <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>03  MAP</div>
-              <Phone><MapScreen /></Phone>
-            </div>
-            <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>04  LEADERBOARD</div>
-              <Phone><LeaderboardScreen /></Phone>
-            </div>
-            <div className="rail-card">
-              <div className="mono" style={{ marginBottom: 14 }}>05  PROFILE</div>
-              <Phone><ProfileScreen /></Phone>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -327,11 +316,11 @@ export default function Home() {
           <h2 className="h-display" style={{ marginTop: 20 }}>Your next great<br/>meal is one <span className="accent">smack</span> away.</h2>
           <div className="stores">
             <Link href="/download" className="btn-store">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.6 2.1-3.8 2.2-3.9-1.2-1.7-3-2-3.7-2-1.6-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.5 1.3-.1 1.8-.8 3.4-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.2 3.1-2.5.7-1 1.3-2.4 1.3-2.4-1-.4-3-1.4-3-3.5z"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
               <div style={{ textAlign: "left" }}><div className="sub">Download on</div><div className="lbl">App Store</div></div>
             </Link>
             <Link href="/download" className="btn-store">
-              <svg width="28" height="28" viewBox="0 0 24 24"><path d="M3 2v20l9-10z" fill="#a4c639"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
               <div style={{ textAlign: "left" }}><div className="sub">Get it on</div><div className="lbl">Google Play</div></div>
             </Link>
           </div>
