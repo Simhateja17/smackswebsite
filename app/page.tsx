@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Phone, { CaptureScreen } from "./components/Phone";
 
 export default function Home() {
   return (
@@ -55,7 +54,7 @@ export default function Home() {
                   <div className="hfc-value">Connoisseur unlocked</div>
                 </div>
               </div>
-              <img src="/hero_view_chatgpt.png" alt="SmackCheck app" className="hero-image" />
+              <img src="/hero_view.png" alt="SmackCheck app home screen" className="hero-image" />
             </div>
           </div>
         </div>
@@ -87,13 +86,14 @@ export default function Home() {
         </div>
         <div className="phone-rail">
           {[
-            { src: "/images/phone-1-feed.png",        alt: "01 Feed" },
-            { src: "/images/phone-2-capture.png",     alt: "02 Capture & AI" },
-            { src: "/images/phone-3-map.png",         alt: "03 Map" },
-            { src: "/images/phone-4-leaderboard.png", alt: "04 Leaderboard" },
-            { src: "/images/phone-5-profile.png",     alt: "05 Profile" },
-          ].map(({ src, alt }) => (
-            <div key={alt} className="phone-rail-card">
+            { src: "/images/phone-1-feed-clean.png",        alt: "Feed screen",           label: "01 Feed" },
+            { src: "/images/phone-2-capture-clean.png",     alt: "Capture and AI screen", label: "02 Capture & AI" },
+            { src: "/images/phone-3-map-clean.png",         alt: "Map screen",            label: "03 Map" },
+            { src: "/images/phone-4-leaderboard-clean.png", alt: "Leaderboard screen",    label: "04 Leaderboard" },
+            { src: "/images/phone-5-profile-clean.png",     alt: "Profile screen",        label: "05 Profile" },
+          ].map(({ src, alt, label }) => (
+            <div key={label} className="phone-rail-card">
+              <div className="phone-rail-label">{label}</div>
               <img src={src} alt={alt} className="phone-rail-img" />
             </div>
           ))}
@@ -153,7 +153,11 @@ export default function Home() {
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <Phone><CaptureScreen /></Phone>
+              <img
+                src="/images/ai-dish-recognized-phone-clean.png"
+                alt="Dish recognized AI score screen"
+                className="ai-phone-shot"
+              />
             </div>
           </div>
         </div>

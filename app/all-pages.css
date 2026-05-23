@@ -36,14 +36,14 @@
   .hero-phones {
     position: relative; display: flex; justify-content: center; align-items: center;
   }
-  .hero-image { height: 650px; max-width: 100%; object-fit: contain; display: block; }
+  .hero-image { height: min(650px, calc(100vh - 170px)); max-width: 100%; object-fit: contain; display: block; }
   .hero-floating-card {
     position: absolute; z-index: 4;
     background: #fff;
     border-radius: 16px;
     padding: 12px 14px;
     box-shadow: 0 24px 60px -10px rgba(0,0,0,.4), 0 6px 16px -4px rgba(100,34,35,.3);
-    display: flex; align-items: center; gap: 10px;
+    display: none; align-items: center; gap: 10px;
     font-size: 13px;
     color: var(--text);
   }
@@ -75,6 +75,52 @@
   .rail-track > * { scroll-snap-align: start; }
   .rail-card { flex-shrink: 0; }
   .rail-card .mono { color: var(--brand); font-weight: 700; }
+
+  .phone-rail {
+    display: flex;
+    justify-content: center;
+    gap: clamp(18px, 1.6vw, 28px);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 34px 32px 28px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .phone-rail::-webkit-scrollbar { display: none; }
+  .phone-rail-card {
+    flex: 0 0 auto;
+    width: clamp(210px, calc((100vw - 180px) / 5), 290px);
+    scroll-snap-align: center;
+    text-align: center;
+  }
+  .phone-rail-card:last-child {
+    width: clamp(210px, calc((100vw - 180px) / 5), 290px);
+  }
+  .phone-rail-label {
+    margin-bottom: 16px;
+    color: var(--brand);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+  .phone-rail-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(20,14,16,.16));
+  }
+
+  @media (max-width: 880px) {
+    .phone-rail { justify-content: flex-start; }
+    .phone-rail { gap: 28px; padding: 28px 24px 20px; }
+    .phone-rail-card { width: min(72vw, 280px); }
+    .phone-rail-card:last-child { width: min(72vw, 280px); }
+    .phone-rail-img { height: auto; width: 100%; }
+  }
 
   /* Feature grid  bento */
   .feat-grid {
@@ -121,6 +167,12 @@
   .ai-step-num { width: 38px; height: 38px; border-radius: 10px; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 700; flex-shrink: 0; box-shadow: var(--shadow-brand); font-family: var(--font-serif); }
   .ai-step h4 { font-size: 16px; margin-bottom: 4px; }
   .ai-step p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+  .ai-phone-shot {
+    display: block;
+    width: min(100%, 350px);
+    height: auto;
+    filter: drop-shadow(0 30px 38px rgba(20,14,16,.22));
+  }
   @media (max-width: 980px) { .ai-grid { grid-template-columns: 1fr; gap: 40px; } }
 
   /* Gamification banner  dark wine */
@@ -304,6 +356,15 @@
     content: ""; position: absolute; inset: -40px; border-radius: 50%;
     background: radial-gradient(circle, rgba(100,34,35,.10), transparent 60%);
     z-index: -1;
+  }
+  .deep-phone-shot {
+    display: block;
+    width: min(100%, 350px);
+    height: auto;
+    filter: drop-shadow(0 28px 34px rgba(20,14,16,.18));
+  }
+  .hiw-score-phone {
+    width: min(100%, 475px);
   }
   @media (max-width: 980px) {
     .deep-feat { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }

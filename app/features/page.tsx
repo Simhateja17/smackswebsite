@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Phone, { CaptureScreen, FeedScreen, MapScreen, LeaderboardScreen, ProfileScreen } from "../components/Phone";
 
 export const metadata: Metadata = {
   title: "Features  SmackCheck",
@@ -31,7 +30,13 @@ export default function Features() {
               <li>Override the AI  your taste is the source of truth</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><div style={{ flex: 1, overflow: "hidden", display: "flex" }}><img src="/images/capture-screen.png" alt="Capture screen" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} /></div></Phone></div>
+          <div className="phone-wrap">
+            <img
+              src="/images/phone-2-capture-clean.png"
+              alt="Capture and AI screen"
+              className="deep-phone-shot"
+            />
+          </div>
         </div>
 
         <div className="deep-feat reverse" data-screen-label="03 Feed">
@@ -46,7 +51,13 @@ export default function Features() {
               <li>Privacy controls: public, friends‑only, or solo</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><FeedScreen /></Phone></div>
+          <div className="phone-wrap">
+            <img
+              src="/images/phone-1-feed-clean.png"
+              alt="Feed screen"
+              className="deep-phone-shot"
+            />
+          </div>
         </div>
 
         <div className="deep-feat" data-screen-label="04 Map">
@@ -61,7 +72,13 @@ export default function Features() {
               <li>Works offline  your saves come with you on the plane</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><MapScreen /></Phone></div>
+          <div className="phone-wrap">
+            <img
+              src="/images/phone-3-map-clean.png"
+              alt="Map screen"
+              className="deep-phone-shot"
+            />
+          </div>
         </div>
 
         <div className="deep-feat reverse" data-screen-label="05 Leaderboard">
@@ -76,7 +93,13 @@ export default function Features() {
               <li>Friendly rivalry, not a casino  anti‑grind by design</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><LeaderboardScreen /></Phone></div>
+          <div className="phone-wrap">
+            <img
+              src="/images/phone-4-leaderboard-clean.png"
+              alt="Leaderboard screen"
+              className="deep-phone-shot"
+            />
+          </div>
         </div>
 
         <div className="deep-feat" data-screen-label="06 Profile">
@@ -91,7 +114,13 @@ export default function Features() {
               <li>Your profile is a public résumé of your taste</li>
             </ul>
           </div>
-          <div className="phone-wrap"><Phone><ProfileScreen /></Phone></div>
+          <div className="phone-wrap">
+            <img
+              src="/images/phone-5-profile-clean.png"
+              alt="Profile screen"
+              className="deep-phone-shot"
+            />
+          </div>
         </div>
       </div>
 
